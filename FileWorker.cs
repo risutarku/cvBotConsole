@@ -23,11 +23,16 @@ namespace cvBotConsole
             writer.WriteLine("Опыт работы", headersFont, XBrushes.Black);
             writer.AddEmptyLine();
 
-            writer.WriteLine($"{data.Company}, {data.Position}", headersFont, XBrushes.DarkGray);
-            writer.AddEmptyLine();
+            foreach (var work in data.WorkPlaces)
+            {
+                writer.WriteLine($"{work.CompanyName}, {work.PositionName}", headersFont, XBrushes.DarkGray);
+                writer.AddEmptyLine();
 
-            writer.WriteLine($"{data.StartDate} - {data.EndDate}", smallHeaderFont, XBrushes.Black);
-            writer.WriteMultiline(data.Experience, textFont);
+                writer.WriteLine($"{work.StartDate} - {work.EndDate}", smallHeaderFont, XBrushes.Black);
+                writer.WriteMultiline(work.Experience, textFont);
+                writer.AddEmptyLine();
+            }
+
             writer.AddEmptyLine(2);
 
             writer.WriteLine("О себе", headersFont, XBrushes.Black);

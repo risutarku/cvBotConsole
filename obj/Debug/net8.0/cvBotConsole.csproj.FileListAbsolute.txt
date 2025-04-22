@@ -24,3 +24,4 @@ D:\vitek\C#\cvBotConsole\obj\Debug\net8.0\cvBotConsole.pdb
 D:\vitek\C#\cvBotConsole\obj\Debug\net8.0\cvBotConsole.genruntimeconfig.cache
 D:\vitek\C#\cvBotConsole\obj\Debug\net8.0\ref\cvBotConsole.dll
 D:\vitek\C#\cvBotConsole\bin\Debug\net8.0\RestSharp.dll
+D:\vitek\C#\cvBotConsole\obj\Debug\net8.0\cvBotConsole.sourcelink.json
