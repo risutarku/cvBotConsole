@@ -1,0 +1,192 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\vitek\\C#\\cvBotConsole\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|d:\\vitek\\c#\\cvbotconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|d:\\vitek\\c#\\cvbotconsole\\resumedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|solutionrelative:resumedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vitye\\AppData\\Local\\SourceServer\\1a260238061bb9c6cf90c0c27c35bc41a00224e3bc9f7bf8cd68ce2bd8f4db88\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\LowLevelLifoSemaphore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vitye\\AppData\\Local\\SourceServer\\8ad7af880c45fe2644ecef21da1fe030ef9e637a8f373346379ec47b329b1e8b\\src\\libraries\\System.Private.CoreLib\\src\\System\\Runtime\\CompilerServices\\TaskAwaiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|d:\\vitek\\c#\\cvbotconsole\\fileworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|solutionrelative:fileworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|d:\\vitek\\c#\\cvbotconsole\\pdftextwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|solutionrelative:pdftextwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 165,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskAwaiter.cs",
+              "DocumentMoniker": "C:\\Users\\vitye\\AppData\\Local\\SourceServer\\8ad7af880c45fe2644ecef21da1fe030ef9e637a8f373346379ec47b329b1e8b\\src\\libraries\\System.Private.CoreLib\\src\\System\\Runtime\\CompilerServices\\TaskAwaiter.cs",
+              "ToolTip": "C:\\Users\\vitye\\AppData\\Local\\SourceServer\\8ad7af880c45fe2644ecef21da1fe030ef9e637a8f373346379ec47b329b1e8b\\src\\libraries\\System.Private.CoreLib\\src\\System\\Runtime\\CompilerServices\\TaskAwaiter.cs",
+              "ViewState": "AgIAACgBAAAAAAAAAAAAAE4BAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:46:00.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PdfTextWriter.cs",
+              "DocumentMoniker": "D:\\vitek\\C#\\cvBotConsole\\PdfTextWriter.cs",
+              "RelativeDocumentMoniker": "PdfTextWriter.cs",
+              "ToolTip": "D:\\vitek\\C#\\cvBotConsole\\PdfTextWriter.cs",
+              "RelativeToolTip": "PdfTextWriter.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwEEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:17:30.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\vitek\\C#\\cvBotConsole\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\vitek\\C#\\cvBotConsole\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABABAAAAAAAAAAAuwBkBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T02:47:28.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LowLevelLifoSemaphore.cs",
+              "DocumentMoniker": "C:\\Users\\vitye\\AppData\\Local\\SourceServer\\1a260238061bb9c6cf90c0c27c35bc41a00224e3bc9f7bf8cd68ce2bd8f4db88\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\LowLevelLifoSemaphore.cs",
+              "ToolTip": "C:\\Users\\vitye\\AppData\\Local\\SourceServer\\1a260238061bb9c6cf90c0c27c35bc41a00224e3bc9f7bf8cd68ce2bd8f4db88\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\LowLevelLifoSemaphore.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAIsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:47:07.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileWorker.cs",
+              "DocumentMoniker": "D:\\vitek\\C#\\cvBotConsole\\FileWorker.cs",
+              "RelativeDocumentMoniker": "FileWorker.cs",
+              "ToolTip": "D:\\vitek\\C#\\cvBotConsole\\FileWorker.cs",
+              "RelativeToolTip": "FileWorker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T15:38:39.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResumeData.cs",
+              "DocumentMoniker": "D:\\vitek\\C#\\cvBotConsole\\ResumeData.cs",
+              "RelativeDocumentMoniker": "ResumeData.cs",
+              "ToolTip": "D:\\vitek\\C#\\cvBotConsole\\ResumeData.cs",
+              "RelativeToolTip": "ResumeData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T15:37:48.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 202,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 888,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
