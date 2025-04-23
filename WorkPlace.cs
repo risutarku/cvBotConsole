@@ -7,6 +7,7 @@
         public string EndDate { get; set; }
         public string PositionName { get; set; }
         public string Experience { get; set; }
+        public string ImprovedExperience { get; set; }
     }
 
 }

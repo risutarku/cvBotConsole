@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cvBotConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb058a06139015b03e5522f671694d83b5ff3896")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46230a179797bc5e30f72a7ddfa8c59ad2d258b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("cvBotConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cvBotConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

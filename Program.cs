@@ -14,8 +14,8 @@ class Program
 {
 
     private static readonly string botToken = "7646768945:AAGk8BPiNS_2x-Nz_2mDA3Kx7Taww1ZI_Ns";
-    private static readonly string PromptWorkExpirience = "Я пишу резюме для вакансии IT специалиста. Я написал свой опыт работы и основные достижения. Сделай этот текст лаконичным, профессиональным, выдели какие-то важные моменты более детально или перефразируй. В ответе напиши только испрваленный текст, больше ничего лишнего не пиши. Вот текст с моим опытом работы: ";
-    private static readonly string PromptAboutMe = "Я пишу резюме для вакансии IT специалиста. Я написал текст для блока \"О себе\". Сделай этот текст лаконичным, профессиональным, выдели какие-то важные моменты более детально или перефразируй. В ответе напиши только испрваленный текст, больше ничего лишнего не пиши. Вот текст для блока \"О себе\": ";
+    private static readonly string PromptWorkExpirience = "Я пишу резюме для вакансии IT специалиста. Я написал свой опыт работы и основные достижения. Сделай этот текст лаконичным, профессиональным, выдели какие-то важные моменты более детально или перефразируй. В ответе напиши только испрваленный текст, больше ничего лишнего не пиши. В ответе не используй дополнительные символы типа жирных точек, и других эмодзи, только обычные знаки препинания. Вот текст с моим опытом работы: ";
+    private static readonly string PromptAboutMe = "Я пишу резюме для вакансии IT специалиста. Я написал текст для блока \"О себе\". Сделай этот текст лаконичным, профессиональным, выдели какие-то важные моменты более детально или перефразируй. В ответе напиши только испрваленный текст, больше ничего лишнего не пиши. В ответе не используй дополнительные символы типа жирных точек, и других эмодзи, только обычные знаки препинания. Вот текст для блока \"О себе\": ";
     private static readonly TelegramBotClient botClient = new(botToken);
     private static readonly ConcurrentDictionary<long, ResumeData> userStates = new();
 
@@ -38,91 +38,6 @@ class Program
 
         await bot.SendMessage(chatId, "Если хотите начать заново, нажмите на кнопку ниже.", replyMarkup: inlineKeyboard);
     }
-
-    //private static async Task HandleUpdateAsync(ITelegramBotClient bot, Update update, CancellationToken cancellationToken = default)
-    //{
-
-    //    if (update.Type == UpdateType.Message && update.Message?.Text is { } messageText)
-    //    {
-    //        var chatId = update.Message.Chat.Id;
-
-    //var options = new RestClientOptions("https://api.intelligence.io.solutions/api/v1/chat/completions");
-    //var client = new RestClient(options);
-    //var request = new RestRequest("");
-    //request.AddHeader("accept", "application/json");
-    //        request.AddHeader("Authorization", "Bearer io-v2-eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJvd25lciI6IjNkM2Y5NjVlLWNmNmItNGMyMS1hYTcyLTVkYmE0NjYzZjkyMCIsImV4cCI6NDg5ODY3ODUxMn0.bwD041qz45lGNQgcB0wqfT_YR16JkNgO-XmRsIzsFNlt-qPqORvPuSYP34zwnjSpDq39E37KXZb2Ml0-oxp8Mg");
-    //        request.AddHeader("content-type", "application/json");
-    //        // Формируем JSON тело запроса
-    //        var body = new
-    //        {
-    //            model = "deepseek-ai/DeepSeek-R1", // замените на конкретную модель, которую поддерживает API
-    //            messages = new[]
-    //            {
-    //    new { role = "user", content = "Расскажи о том какой я сильный и смелый, и вообще самый крутой человек на земле. В ответе просто похвали меня" }
-    //}
-    //        };
-
-    //        // Добавляем JSON в тело запроса
-    //        request.AddJsonBody(body);
-    //        await bot.SendMessage(chatId, "Думаю о прекрасном, подождите пару секунд...");
-
-    //        Console.WriteLine($"Запрос отправлен в нейросеть в: {DateTime.Now}");
-    //        var response = await client.PostAsync(request);
-    //        Console.WriteLine($"Запрос получен из нейросети в: {DateTime.Now}");
-
-
-
-    //        // Пример: response.Content содержит JSON как строку
-    //        var json = response.Content;
-
-    //        // Определяем модель
-    //        var doc = JsonDocument.Parse(json);
-    //        var root = doc.RootElement;
-
-
-    //        // Ищем message.content в choices[0]
-    //        var content = root
-    //            .GetProperty("choices")[0]
-    //            .GetProperty("message")
-    //            .GetProperty("content")
-    //            .GetString();
-
-    //        content = content.Split("</think>")[1].ToString();
-
-    //        doc.Dispose();
-
-    //        await bot.SendMessage(chatId, content);
-    //        await bot.SendMessage(chatId, "P.S. А вообще, хуйлуша та еще ты)");
-
-
-
-    //        //await bot.SendMessage(chatId, response.Content);
-
-
-    //        //var options = new RestClientOptions("https://api.intelligence.io.solutions/api/v1/models");
-    //        //var client = new RestClient(options);
-    //        //var request = new RestRequest("");
-    //        //request.AddHeader("accept", "application/json");
-    //        //request.AddHeader("Authorization", "Bearer io-v2-eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJvd25lciI6IjNkM2Y5NjVlLWNmNmItNGMyMS1hYTcyLTVkYmE0NjYzZjkyMCIsImV4cCI6NDg5ODY3ODUxMn0.bwD041qz45lGNQgcB0wqfT_YR16JkNgO-XmRsIzsFNlt-qPqORvPuSYP34zwnjSpDq39E37KXZb2Ml0-oxp8Mg");
-    //        //var response = await client.GetAsync(request);
-    //    }
-
-    //    if (update.Type == UpdateType.CallbackQuery)
-    //    {
-    //        var callbackQuery = update.CallbackQuery;
-    //        var chatId = callbackQuery.Message.Chat.Id;
-
-    //        if (callbackQuery.Data == "reset")
-    //        {
-    //            // Сброс данных пользователя
-    //            userStates.TryRemove(chatId, out _);
-    //            await bot.AnswerCallbackQuery(callbackQuery.Id, "Данные сброшены. Давайте начнем заново!");
-    //            await bot.SendMessage(chatId, "Все данные сброшены. Давайте начнем заново!");
-    //        }
-    //    }
-
-    //}
-
     private static async Task HandleUpdateAsync(ITelegramBotClient bot, Update update, CancellationToken cancellationToken = default)
     {
         if (update.Type == UpdateType.Message && update.Message?.Text is { } messageText)
@@ -240,51 +155,6 @@ class Program
                     await SendStartKeyboard(bot, chatId);
                     break;
 
-                case 6: // Опыт работы
-                    userData.Experience = messageText;
-
-                    // Сохраняем текущий опыт
-                    userData.WorkPlaces.Add(new WorkPlace
-                    {
-                        CompanyName = userData.Company,
-                        StartDate = userData.StartDate,
-                        EndDate = userData.EndDate,
-                        PositionName = userData.Position,
-                        Experience = userData.Experience
-                    });
-
-                    // Очищаем временные переменные
-                    userData.Company = null;
-                    userData.StartDate = null;
-                    userData.EndDate = null;
-                    userData.Position = null;
-                    userData.Experience = null;
-
-                    // Если уже 5 опытов — переход к следующему шагу
-                    if (userData.WorkPlaces.Count >= 5)
-                    {
-                        userData.Step = 7;
-                        await bot.SendMessage(chatId, "Максимум 5 рабочих мест. Переходим к разделу 'О себе':");
-                        await bot.SendMessage(chatId, "Расскажите о себе (не более 500 символов):");
-                        return;
-                    }
-
-                    // Показываем кнопки: добавить еще или следующий шаг
-                    userData.Step = 60;
-                    await bot.SendMessage(
-                                chatId,
-                                "Хотите добавить ещё одно место работы или перейти к следующему разделу?",
-                                replyMarkup: new InlineKeyboardMarkup(new[]
-                                {
-                    new[]
-                    {
-                        InlineKeyboardButton.WithCallbackData("➕ Добавить ещё", "add_job"),
-                        InlineKeyboardButton.WithCallbackData("➡️ Перейти к 'О себе'", "go_about")
-                    }
-                                })
-                            );
-                    break;
-
                 case 7: // О себе
                     userData.About = messageText;
 
@@ -323,6 +193,50 @@ class Program
                     }
 
                     break;
+
+                case 6: // Опыт работы
+                    userData.Experience = messageText;
+
+                    userData.WorkPlaces.Add(new WorkPlace
+                    {
+                        CompanyName = userData.Company,
+                        StartDate = userData.StartDate,
+                        EndDate = userData.EndDate,
+                        PositionName = userData.Position,
+                        Experience = userData.Experience
+                    });
+
+                    userData.Company = null;
+                    userData.StartDate = null;
+                    userData.EndDate = null;
+                    userData.Position = null;
+                    userData.Experience = null;
+
+                    // Если уже 5 опытов — переход к следующему шагу
+                    if (userData.WorkPlaces.Count >= 5)
+                    {
+                        userData.Step = 7;
+                        await bot.SendMessage(chatId, "Максимум 5 рабочих мест. Переходим к разделу 'О себе':");
+                        await bot.SendMessage(chatId, "Расскажите о себе (не более 500 символов):");
+                        return;
+                    }
+
+                    userData.Step = 60;
+                    // Показываем кнопки: добавить еще или следующий шаг
+                    await bot.SendMessage(
+                                chatId,
+                                "Хотите добавить ещё одно место работы или перейти к следующему разделу?",
+                                replyMarkup: new InlineKeyboardMarkup(new[]
+                                {
+                    new[]
+                    {
+                        InlineKeyboardButton.WithCallbackData("✅ Улучшить опыт", "improve_experience"),
+                        InlineKeyboardButton.WithCallbackData("➕ Добавить ещё", "add_job"),
+                        InlineKeyboardButton.WithCallbackData("➡️ Перейти к 'О себе'", "go_about")
+                    }
+                                })
+                            );
+                    break;
             }
         }
 
@@ -343,7 +257,6 @@ class Program
                 if (userStates.TryGetValue(chatId, out var user))
                 {
                     user.About = user.ImprovedAbout;
-                    user.Step = 8;
 
                     await bot.SendMessage(chatId, "Улучшенный текст сохранён. Формирую резюме...");
 
@@ -419,6 +332,81 @@ class Program
                     await bot.SendMessage(chatId, "Расскажите о себе (не более 500 символов):");
                 }
             }
+            else if (callbackQuery.Data == "improve_experience")
+            {
+                if (userStates.TryGetValue(chatId, out var user))
+                {
+                    await bot.SendMessage(chatId, "Отправляю текст на улучшение...");
+
+                    var currentExperience = user.WorkPlaces[^1].Experience;
+
+                    try
+                    {
+                        var improvedExperience = await ImproveExperienceTextAsync(PromptWorkExpirience, currentExperience);
+                        user.WorkPlaces[^1].ImprovedExperience = improvedExperience;
+
+                        await bot.SendMessage(chatId, $"Вот улучшенный вариант:\n\n{improvedExperience}");
+
+                        await bot.SendMessage(
+                                    chatId: chatId,
+                                    text: "Выберите, какой вариант сохранить:",
+                                    replyMarkup: new InlineKeyboardMarkup(new[]
+                                    {
+                            new[]
+                            {
+                                InlineKeyboardButton.WithCallbackData("✅ Оставить улучшенный", "accept_improved_experience"),
+                                InlineKeyboardButton.WithCallbackData("🔙 Оставить свой", "accept_original_experience")
+                            }
+                                    })
+                                );
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Ошибка нейросети: {ex.Message}");
+                        await bot.SendMessage(chatId, "Ошибка при улучшении текста. Сохраняю оригинальный.");
+                    }
+                }
+            }
+            else if (callbackQuery.Data == "accept_improved_experience")
+            {
+                if (userStates.TryGetValue(chatId, out var user))
+                {
+                    user.WorkPlaces[^1].Experience = user.WorkPlaces[^1].ImprovedExperience;
+
+                    await bot.SendMessage(chatId, "Улучшенный текст сохранён!");
+                    await bot.SendMessage(
+                                chatId,
+                                "Хотите добавить ещё одно место работы или перейти к следующему разделу?",
+                                replyMarkup: new InlineKeyboardMarkup(new[]
+                                {
+                    new[]
+                    {
+                        InlineKeyboardButton.WithCallbackData("➕ Добавить ещё", "add_job"),
+                        InlineKeyboardButton.WithCallbackData("➡️ Перейти к 'О себе'", "go_about")
+                    }
+                                })
+                            );
+                }
+            }
+            else if (callbackQuery.Data == "accept_original_experience")
+            {
+                if (userStates.TryGetValue(chatId, out var user))
+                {
+                    await bot.SendMessage(chatId, "Оригинальный текст сохранён!");
+                    await bot.SendMessage(
+                                chatId,
+                                "Хотите добавить ещё одно место работы или перейти к следующему разделу?",
+                                replyMarkup: new InlineKeyboardMarkup(new[]
+                                {
+                    new[]
+                    {
+                        InlineKeyboardButton.WithCallbackData("➕ Добавить ещё", "add_job"),
+                        InlineKeyboardButton.WithCallbackData("➡️ Перейти к 'О себе'", "go_about")
+                    }
+                                })
+                            );
+                }
+            }
         }
     }
 
@@ -457,42 +445,6 @@ class Program
 
         return improved;
     }
-
-
-    //private static async Task<string> ImproveTextAsync(string originalText)
-    //{
-    //    var options = new RestClientOptions("https://api.intelligence.io.solutions/api/v1/chat/completions");
-    //    var client = new RestClient(options);
-    //    var request = new RestRequest();
-    //    request.AddHeader("accept", "application/json");
-    //    request.AddHeader("Authorization", "Bearer YOUR_TOKEN_HERE");
-    //    request.AddHeader("content-type", "application/json");
-
-    //    var body = new
-    //    {
-    //        model = "deepseek-ai/DeepSeek-R1",
-    //        messages = new[]
-    //        {
-    //        new { role = "user", content = $"Переформулируй этот текст так, чтобы он звучал более профессионально и уверенно:\n\n\"{originalText}\"" }
-    //    }
-    //    };
-
-    //    request.AddJsonBody(body);
-    //    var response = await client.PostAsync(request);
-
-    //    if (!response.IsSuccessful)
-    //        throw new Exception("Ошибка при запросе к нейросети.");
-
-    //    var json = response.Content;
-    //    using var doc = JsonDocument.Parse(json);
-    //    var content = doc.RootElement
-    //        .GetProperty("choices")[0]
-    //        .GetProperty("message")
-    //        .GetProperty("content")
-    //        .GetString();
-
-    //    return content?.Split("</think>").Last().Trim() ?? "Ошибка в ответе нейросети.";
-    //}
 
 
     private static Task HandleErrorAsync(ITelegramBotClient bot, Exception exception, CancellationToken cancellationToken)
