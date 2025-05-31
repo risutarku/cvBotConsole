@@ -3,13 +3,6 @@
   "WorkspaceRootPath": "D:\\vitek\\C#\\cvBotConsole\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|d:\\vitek\\c#\\cvbotconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vitye\\AppData\\Local\\SourceServer\\e731cb442f81540f5224fc0882914611701e270944903458a3478221ade39ba5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\Tasks\\Task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|d:\\vitek\\c#\\cvbotconsole\\resumedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|solutionrelative:resumedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,8 +11,19 @@
       "RelativeMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|solutionrelative:workplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|d:\\vitek\\c#\\cvbotconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|d:\\vitek\\c#\\cvbotconsole\\pdftextwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|solutionrelative:pdftextwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|d:\\vitek\\c#\\cvbotconsole\\fileworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9AF87CD8-7CE7-4470-8578-71CF1BD307CC}|cvBotConsole.csproj|solutionrelative:fileworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vitye\\AppData\\Local\\SourceServer\\e731cb442f81540f5224fc0882914611701e270944903458a3478221ade39ba5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\Tasks\\Task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +35,19 @@
           "DockedWidth": 165,
           "SelectedChildIndex": 14,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PdfTextWriter.cs",
+              "DocumentMoniker": "D:\\vitek\\C#\\cvBotConsole\\PdfTextWriter.cs",
+              "RelativeDocumentMoniker": "PdfTextWriter.cs",
+              "ToolTip": "D:\\vitek\\C#\\cvBotConsole\\PdfTextWriter.cs",
+              "RelativeToolTip": "PdfTextWriter.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAwwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T07:18:32.828Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -76,45 +93,53 @@
               "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Task.cs",
-              "DocumentMoniker": "C:\\Users\\vitye\\AppData\\Local\\SourceServer\\e731cb442f81540f5224fc0882914611701e270944903458a3478221ade39ba5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\Tasks\\Task.cs",
-              "ToolTip": "C:\\Users\\vitye\\AppData\\Local\\SourceServer\\e731cb442f81540f5224fc0882914611701e270944903458a3478221ade39ba5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\Tasks\\Task.cs",
-              "ViewState": "AgIAAO4CAAAAAAAAAAAAAAIDAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:05:28.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "WorkPlace.cs",
               "DocumentMoniker": "D:\\vitek\\C#\\cvBotConsole\\WorkPlace.cs",
               "RelativeDocumentMoniker": "WorkPlace.cs",
               "ToolTip": "D:\\vitek\\C#\\cvBotConsole\\WorkPlace.cs",
               "RelativeToolTip": "WorkPlace.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T07:34:39.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\vitek\\C#\\cvBotConsole\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\vitek\\C#\\cvBotConsole\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAKkBAAAAAAAAAAAkwBEAAADTAQAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOYBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T02:47:28.57Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResumeData.cs",
+              "DocumentMoniker": "D:\\vitek\\C#\\cvBotConsole\\ResumeData.cs",
+              "RelativeDocumentMoniker": "ResumeData.cs",
+              "ToolTip": "D:\\vitek\\C#\\cvBotConsole\\ResumeData.cs",
+              "RelativeToolTip": "ResumeData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T15:37:48.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\vitye\\AppData\\Local\\SourceServer\\e731cb442f81540f5224fc0882914611701e270944903458a3478221ade39ba5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\Tasks\\Task.cs",
+              "ToolTip": "C:\\Users\\vitye\\AppData\\Local\\SourceServer\\e731cb442f81540f5224fc0882914611701e270944903458a3478221ade39ba5\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\Tasks\\Task.cs",
+              "ViewState": "AgIAAO4CAAAAAAAAAAAAAAIDAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:05:28.621Z"
             },
             {
               "$type": "Document",
@@ -124,21 +149,14 @@
               "RelativeDocumentMoniker": "FileWorker.cs",
               "ToolTip": "D:\\vitek\\C#\\cvBotConsole\\FileWorker.cs",
               "RelativeToolTip": "FileWorker.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwB8AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAACsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T15:38:39.705Z"
+              "WhenOpened": "2025-04-21T15:38:39.705Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResumeData.cs",
-              "DocumentMoniker": "D:\\vitek\\C#\\cvBotConsole\\ResumeData.cs",
-              "RelativeDocumentMoniker": "ResumeData.cs",
-              "ToolTip": "D:\\vitek\\C#\\cvBotConsole\\ResumeData.cs",
-              "RelativeToolTip": "ResumeData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T15:37:48.415Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         },

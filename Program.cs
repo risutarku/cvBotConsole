@@ -151,7 +151,7 @@ class Program
                     }
                     userData.Position = messageText;
                     userData.Step++;
-                    await bot.SendMessage(chatId, "Опишите свой опыт и достижения (не более 500 символов):");
+                    await bot.SendMessage(chatId, "Опишите свой опыт и достижения:");
                     await SendStartKeyboard(bot, chatId);
                     break;
 
@@ -188,7 +188,29 @@ class Program
                         await bot.SendMessage(chatId, "Ошибка при обработке текста нейросетью. Сохраняю оригинальный вариант.");
 
                         userData.Step = 8;
-                        await bot.SendMessage(chatId, "Спасибо! Теперь ваш резюме почти готов.");
+                        await bot.SendMessage(chatId, "Спасибо! Теперь ваше резюме почти готово.");
+                        try
+                        {
+                            var filePath = FileWorker.GeneratePdf(userData);
+
+                            if (!File.Exists(filePath))
+                            {
+                                await bot.SendMessage(chatId, "Ошибка: PDF-файл не был создан.");
+                                return;
+                            }
+
+                            await using (var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                            {
+                                await bot.SendDocument(chatId, new Telegram.Bot.Types.InputFileStream(fileStream, "Resume.pdf"));
+                            }
+
+                            File.Delete(filePath); // Удаляем файл после отправки
+                        }
+                        catch (Exception exs)
+                        {
+                            Console.WriteLine($"Ошибка при создании/отправке PDF: {exs.Message}");
+                            await bot.SendMessage(chatId, $"Произошла ошибка: {exs.Message}");
+                        }
                         // здесь можешь перейти к следующему этапу, например — генерация PDF
                     }
 
@@ -217,7 +239,7 @@ class Program
                     {
                         userData.Step = 7;
                         await bot.SendMessage(chatId, "Максимум 5 рабочих мест. Переходим к разделу 'О себе':");
-                        await bot.SendMessage(chatId, "Расскажите о себе (не более 500 символов):");
+                        await bot.SendMessage(chatId, "Расскажите о себе:");
                         return;
                     }
 
@@ -230,8 +252,14 @@ class Program
                                 {
                     new[]
                     {
-                        InlineKeyboardButton.WithCallbackData("✅ Улучшить опыт", "improve_experience"),
-                        InlineKeyboardButton.WithCallbackData("➕ Добавить ещё", "add_job"),
+                        InlineKeyboardButton.WithCallbackData("✅ Улучшить опыт", "improve_experience")
+                    },
+                    new[]
+                    {
+                        InlineKeyboardButton.WithCallbackData("➕ Добавить ещё", "add_job")
+                    },
+                    new[]
+                    {
                         InlineKeyboardButton.WithCallbackData("➡️ Перейти к 'О себе'", "go_about")
                     }
                                 })
@@ -354,7 +382,10 @@ class Program
                                     {
                             new[]
                             {
-                                InlineKeyboardButton.WithCallbackData("✅ Оставить улучшенный", "accept_improved_experience"),
+                                InlineKeyboardButton.WithCallbackData("✅ Оставить улучшенный", "accept_improved_experience")
+                            },
+                            new[]
+                            {
                                 InlineKeyboardButton.WithCallbackData("🔙 Оставить свой", "accept_original_experience")
                             }
                                     })
